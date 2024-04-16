@@ -1,0 +1,359 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #ccc;
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .search-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Featured Data Styles */
+  .featured-data {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .featured-data h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .data-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .data-card {
+    background-color: #f1f1f1;
+    padding: 30px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .data-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .data-card p {
+    margin-bottom: 20px;
+  }
+  
+  .data-card a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .data-card a:hover {
+    color: #45a049;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+  .hero {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+  }
+  
+  .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+ /* Login and Signup Page Styles */
+.login-container, .signup-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .login-content, .signup-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .login-form, .signup-form {
+    margin-top: 20px;
+  }
+  
+  .login-form label, .signup-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .login-form input, .signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-form button, .signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover, .signup-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .login-content p, .signup-content p {
+    margin-top: 20px;
+  }
+  
+  .login-content a, .signup-content a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .login-content a:hover, .signup-content a:hover {
+    color: #45a049;
+  }
+
+
+
+/*About us*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8eff1;
+  color: #083d77;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.logo {
+  height: 200px;
+  margin-right: 20px;
+}
+
+.title h1 {
+  color: #da4167;
+  margin: 0;
+  font-size: 24px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.about-section {
+  padding: 40px;
+}
+
+.about-content {
+  background-color: rgba(8, 61, 119, 0.7);
+  padding: 40px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.about-content h2 {
+  color: #da4167;
+  margin-top: 0;
+}
+
+.team-section h2 {
+  color: #da4167;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.team-member {
+  background-color: rgba(245, 245, 245, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.github-link {
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+a {
+  color: #da4167;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
