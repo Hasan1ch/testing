@@ -14,14 +14,15 @@ body{
   justify-content:center;
   align-items:center;
   min-height:100vh;
-  background:seagreen;
 }
 
 .wrapper{
   width:420px;
-  background:purple;
+  background:transparent;
+  opacity: 1;
   color:#fff;
   border-radius:10px;
+  border-color: #333;
   padding:30px 40px;
 }
 
