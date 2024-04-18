@@ -25,11 +25,16 @@ app.get("/ping", (req, res) => {
 });
 
 // Returns an array of cities from the database
-app.get("/cities", async (req, res) => {
-  const [rows, fields] = await db.execute("SELECT * FROM `city`");
-  return res.send(rows);
+app.get("/cities", (req, res) => {
+  db.execute("SELECT * FROM `city`", (err, rows, fields) => {
+    console.log(`/cities: ${rows.length} rows`);
+    return res.send(rows);
+  });
 });
+
 // Run server!
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+
