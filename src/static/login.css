@@ -13,16 +13,21 @@
 
 body {
     
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   
+  
+}
 
 .login-wrapper{
   width:420px;
   background:transparent;
-  margin: 160px auto;
+  margin: 170px auto;
   opacity: 1;
   color:#f9433dcc;
   border-radius:10px;
