@@ -2,30 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up - Population Search Engine</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sign Up</title>
+  
+  <link rel="stylesheet" href="/src/static/style.css">
+  <link rel="stylesheet" href="/src/static/navbar.css">
+  <link rel="stylesheet" href="/src/static/signup.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <div class="signup-container">
-    <video autoplay loop muted class="video-bg">
-      <source src="IMG_2507.MOV" type="video/mp4">
-    </video>
-    <div class="signup-content">
-      <h1>Sign Up</h1>
-      <form class="signup-form">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Sign Up</button>
-      </form>
-      <p>Already have an account? <a href="login.html">Login</a></p>
+  <header>
+    <div class="nav-container">
+      <nav class="navbar">
+        <img src="/images/Group_Logo.png" alt="OrionEngine Ensemble Logo" class="logo">
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span the="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-links">Home</a></li>
+          <li><a href="#" class="nav-links">Services</a></li>
+          <li><a href="aboutus.html" class="nav-links">About Us</a></li>
+          <li><a href="#" class="nav-links">Contact Us</a></li>
+          <li><a href="login.html" class="nav-links nav-links-btn">Log In</a></li>
+        </ul>
+      </nav>
     </div>
+    <script src="app.js"></script>
+  </header>
+  <div class="video-bg">
+    <video autoplay loop muted class="bg-video">
+      <source src="/images/IMG_2507.MOV" type="video/mp4">
+    </video>
   </div>
-
-  <script src="script.js"></script>
+  <div class="signup-wrapper">
+    <form action="">
+      <h1>Sign Up</h1>
+      <div class="signup-input-box">
+        <input type="text" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="signup-input-box">
+        <input type="email" placeholder="Email" required>
+        <i class='bx bx-envelope'></i>
+      </div>
+      <div class="signup-input-box">
+        <input type="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="signup-input-box">
+        <input type="password" placeholder="Confirm Password" required>
+        <i class='bx bxs-lock'></i>
+      </div>
+      <button type="submit" class="signup-btn">Sign Up</button>
+      <div class="register-link">
+        <p>Already have an account? 
+          <a href="/src/login.html">Log In</a>
+        </p>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
