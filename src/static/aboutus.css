@@ -1,4 +1,5 @@
 /*About us*/
+
 body {
     
   font-family: Arial, sans-serif;
@@ -11,7 +12,6 @@ body {
   
   
 }
-  
   .video-bg {
     position: fixed; /* Changed from absolute to fixed */
     top: 0;
@@ -40,14 +40,15 @@ body {
     align-items: center;
     justify-content: start;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    background-color: var(--darkgray);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     max-width: 800px;
     margin: 20px auto;
   }
   
   .title h1 {
-    color: #da4167;
+    color:#f9433dcc;
     margin: 0;
     font-size: 24px;
     padding: 0 60px;
@@ -57,7 +58,7 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--darkgray);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
@@ -67,19 +68,26 @@ body {
   }
   
   .about-content {
-    background-color: rgba(8, 61, 119, 0.7);
-    padding: 40px;
+    background-color: var(--darkgray);
+    padding: 30px;
     border-radius: 8px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .about-content h2 {
-    color: #da4167;
-    margin-top: 0;
+    color:#f9433dcc;
+    margin-bottom: 15px;
+    margin-top: -50px;
   }
   
   .team-section h2 {
-    color: #da4167;
+    color:#f9433dcc;
+    margin-left: 330px;
+    margin-top: -20px;
+    margin-bottom: 15px;
   }
   
   .team-members {
@@ -89,7 +97,8 @@ body {
   }
   
   .team-member {
-    background-color: rgba(245, 245, 245, 0.8);
+    background-color: var(--darkgray);
+    color: white;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -106,16 +115,17 @@ body {
   .github-link {
     text-align: center;
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--darkgray);
     padding: 20px;
     border-radius: 8px;
   }
   
   a {
-    color: #da4167;
+    color:#f9433dcc;
     text-decoration: none;
   }
   
   a:hover {
     text-decoration: underline;
   }
+ 

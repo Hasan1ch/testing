@@ -22,6 +22,7 @@
   }
 }
   .nav-container {
+    position: sticky;
     width: 100%;
     background-color: var(--darkgray);
   }
@@ -149,24 +150,7 @@
         transition: all 0.4s ease-out;
       }
       
-      .nav-menu.active {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 999; /* Ensure the nav menu is on top */
-    overflow-y: auto; /* Add scrolling if the menu content exceeds the viewport height */
-    background-color: var(--darkgray); /* Set the background color for the nav menu overlay */
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
+      
 
 
       #mobile-menu {

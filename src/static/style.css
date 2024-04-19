@@ -4,278 +4,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
-  height: 100%;
-  margin: 0;
-  overflow-x: hidden;
-}
+
 body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-
-  /* Hero Section Styles */
-  .hero {
-    background-image: url('/images/IMG_2506.MP4');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding: 100px 20px;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
-  
-  .search-form input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    width: 300px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .search-form button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-    .hero {
-      padding: 50px 20px; /* Adjust padding for mobile */
-    }
-  
-    .hero h1 {
-      font-size: 36px; /* Decrease font size for mobile */
-    }
-  
-    .hero p {
-      font-size: 18px; /* Decrease font size for mobile */
-    }
-  
-    .search-form input[type="text"] {
-      width: 100%; /* Make the search input full-width on mobile */
-      margin-bottom: 10px; /* Add some spacing between input and button */
-    }
-  }
-  /* Featured Data Styles */
-  .featured-data {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .featured-data h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-  }
-  
-  .data-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .data-card {
-    background-color: #f1f1f1;
-    padding: 30px;
-    margin: 20px;
-    width: 300px;
-    text-align: center;
-    border-radius: 5px;
-  }
-  
-  .data-card h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .data-card p {
-    margin-bottom: 20px;
-  }
-  
-  .data-card a {
-    color: #4CAF50;
-    text-decoration: none;
-  }
-  
-  .data-card a:hover {
-    color: #45a049;
-  }
-  
-  @media (max-width: 768px) {
-    .data-cards {
-      flex-direction: column; /* Stack data cards vertically */
-      align-items: center; /* Center the data cards */
-    }
-  
-    .data-card {
-      width: 100%; /* Make data cards full-width on mobile */
-      max-width: 400px; /* Set a maximum width for better readability */
-      margin: 10px 0; /* Add some spacing between data cards */
-    }
-  }
-  /* Footer Styles */
-  footer {
-    background-color: var(--darkgray);
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-
-  .hero {
-    position: relative;
-    height: 600px;
-    overflow: hidden;
-  }
-  
-  .hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  .hero-content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content p {
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
-
- /* Login and Signup Page Styles */
-.login-container, .signup-container {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .video-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  .login-content, .signup-content {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-  }
-  
-  .login-form, .signup-form {
-    margin-top: 20px;
-  }
-  
-  .login-form label, .signup-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .login-form input, .signup-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .login-form button, .signup-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .login-form button:hover, .signup-form button:hover {
-    background-color: #45a049;
-  }
-  
-  .login-content p, .signup-content p {
-    margin-top: 20px;
-  }
-  
-  .login-content a, .signup-content a {
-    color: #4CAF50;
-    text-decoration: none;
-  }
-  
-  .login-content a:hover, .signup-content a:hover {
-    color: #45a049;
-  }
-
-
-
-/*About us*/
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #e8eff1;
-  color: #083d77;
-  position: relative;
-  height: 100vh;
-  overflow: auto;
+  justify-content: space-between;
 }
 
 .video-bg {
-  position: fixed; /* Changed from absolute to fixed */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -285,10 +24,10 @@ body {
 }
 
 .bg-video {
-  position: absolute; /* Ensures that the video can adjust positioning as needed */
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the video perfectly */
+  transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -297,115 +36,165 @@ body {
   overflow: hidden;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  max-width: 800px;
-  margin: 20px auto;
+header {
+  
+  top: 0;
+  z-index: 1;
 }
 
-.logo {
-  height: 200px;
-  margin-right: 20px;
+main {
+  flex: 1;
 }
 
-.title h1 {
-  color: #da4167;
-  margin: 0;
-  font-size: 24px;
-}
-
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.about-section {
-  padding: 40px;
-}
-
-.about-content {
-  background-color: rgba(8, 61, 119, 0.7);
-  padding: 40px;
-  border-radius: 8px;
+/* Hero Section Styles */
+.hero {
+  background-size: cover;
+  background-position: center;
   color: #fff;
-}
-
-.about-content h2 {
-  color: #da4167;
-  margin-top: 0;
-}
-
-.team-section h2 {
-  color: #da4167;
-}
-
-.team-members {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
-}
-
-.team-member {
-  background-color: rgba(245, 245, 245, 0.8);
-  padding: 20px;
-  border-radius: 8px;
+  padding: 100px 20px;
   text-align: center;
 }
 
-.team-member img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
-.github-link {
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
   text-align: center;
-  margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 8px;
+  padding: 100px 20px;
 }
 
-a {
-  color: #da4167;
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .search-form input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Featured Data Styles */
+.featured-data {
+  background-color: whitesmoke;
+  padding: 50px 20px;
+  text-align: center;
+  overflow: hidden; /* Add this line to hide any overflowing content */
+}
+
+.featured-data h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.data-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -10px; /* Add negative margin to offset the spacing between cards */
+}
+
+.data-card {
+  background-color: var(--darkgray);
+  padding: 30px;
+  margin: 10px; /* Update the margin to provide spacing between cards */
+  flex: 0 0 calc(33.33% - 20px); /* Update the flex property to set width and spacing */
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  box-sizing: border-box; /* Add this line to include padding and border in the element's total width */
+}
+
+.data-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.data-card p {
+  margin-bottom: 20px;
+}
+
+.data-card a {
+  color: #4CAF50;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.data-card a:hover {
+  color: #45a049;
 }
-.get-button {
-  text-decoration: none !important; /* Remove underline from links */
+
+@media (max-width: 768px) {
+  .data-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .data-card {
+    flex: 0 0 100%; /* Update the flex property to make cards full-width on mobile */
+    max-width: 400px;
+    margin: 10px 0;
+  }
+}
+/* Footer Styles */
+footer {
+  bottom: 0;
+  background-color: var(--darkgray);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
 }
 
 /* Button style */
 .get-started {
-  background-color: none; 
-  border: none; /* Remove border */
-  color: white; /* White text color */
-  padding: 15px 15px; /* Padding */
-  text-align: center; /* Center text */
-  display: inline-block; /* Display as inline-block */
-  font-size: 16px; /* Font size */
-  margin: 4px 2px; /* Margin */
-  transition-duration: 0.4s; 
-  cursor: pointer; 
-  border-radius: 10px; 
-  text-decoration: none !important; /* Remove underline */
+  background-color: var(--brightred);
+    padding: 6px 16px;
+    border-radius: 4px;
+  
+  background-color: var(--darkgray);
+  color: var(--white);
+  transition: all 0.4s ease-out;
 }
 
 /* Button hover effect */
 .get-started:hover {
-  background-color:rgba(247, 246, 254, 0.5); /* Darker green background on hover */
+  background-color: transparent;
+    text-decoration: none;
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: solid 2px var(--brightred);
+    transition: all 0.3s ease-out;
 }
