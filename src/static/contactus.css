@@ -5,18 +5,21 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: space-between;
     
     
 }
 
 .contact-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 300px;
+    width:420px;
+  background:transparent;
+  margin: 170px auto;
+  opacity: 1;
+  color:#f9433dcc;
+  border-radius:10px;
+  border-color: #333;
+  padding:30px 40px;
 }
 
 h1 {
