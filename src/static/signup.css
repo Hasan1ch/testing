@@ -23,7 +23,7 @@ body {
 }
 .signup-wrapper {
   width: 420px;
-  background: transparent;
+  background-color: var(--darkgray);
   margin: 100px auto;
   opacity: 1;
   color: #f9433dcc;

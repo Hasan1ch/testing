@@ -9,30 +9,33 @@
 }
 
 body {
+    
     font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-  
-}
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+  }
 
 .contact-wrapper {
-    width: 420px;
-    background: transparent; /* Transparent white background */
-    color: #fff;
-    border-radius: 10px;
-    padding: 30px 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width:420px;
+  background-color: var(--darkgray);
+  margin: 130px auto;
+  opacity: 1;
+  color:#f9433dcc;
+  border-radius:10px;
+  border-color: #333;
+  padding:30px 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .contact-wrapper h1 {
-    font-size: 36px;
-    color: #f9433dcc; /* Title Color */
-    text-align: center;
+    font-size:36px;
+  text-align:center;
 }
 
 .contact-input-box {
