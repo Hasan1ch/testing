@@ -1,67 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  
-  <link rel="stylesheet" href="/src/static/style.css">
-  <link rel="stylesheet" href="/src/static/navbar.css">
-  <link rel="stylesheet" href="/src/static/login.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-
-<header>
-  <div class="nav-container">
-    <nav class="navbar">
-      <img src="/images/Group_Logo.png" alt="OrionEngine Ensemble Logo" class="logo">
-      <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <ul class="nav-menu">
-        <li><a href="index.html" class="nav-links">Home</a></li>
-        <li><a href="#" class="nav-links">Services</a></li>
-        <li><a href="aboutus.html" class="nav-links">About Us</a></li>
-        <li><a href="#" class="nav-links">Contact Us</a></li>
-        <li><a href="signup.html" class="nav-links nav-links-btn">Sign Up</a></li>
-      </ul>
-    </nav>
-  </div>
-  <script src="app.js"></script>
-</header>
-<body>
-<div class="video-bg">
-  <video autoplay loop muted class="bg-video">
-    <source src="/images/IMG_2507.MOV" type="video/mp4">
-  </video>
-</div>
-<div class="login-wrapper">
-    <form action="">
-      <h1>Login</h1>
-      <div class="login-input-box">
-        <input type="text" placeholder="Username" required>
-        <i class='bx bxs-user'></i>
-      </div>
-      <div class="login-input-box">
-        <input type="password" placeholder="Password" required>
-        <i class='bx bxs-lock-alt'></i>
-         </div>
-      <div class="remember-forgot">
-        <label><input type="checkbox">Remember me</label>
-        <a href="#">Forgot password?</a>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="/src/static/style.css">
+    <link rel="stylesheet" href="/src/static/navbar.css">
+    <link rel="stylesheet" href="/src/static/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body class="bobo">
+    <header>
+    <div class="nav-container">
+      <nav class="navbar">
+        <img src="/images/Group_Logo.png" alt="OrionEngine Ensemble Logo" class="logo">
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      <button type="submit" class="login-btn">Login</button>
-      
-      <div class="register-link">
-        <p>Don't have an account?  
-          <a href="/src/signup.html">Register</a>
-        </p>
-        
-      </div>
-    </form>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-links">Home</a></li>
+          <li><a href="#" class="nav-links">Services</a></li>
+          <li><a href="aboutus.html" class="nav-links">About Us</a></li>
+          <li><a href="#" class="nav-links">Contact Us</a></li>
+          <li><a href="signup.html" class="nav-links nav-links-btn">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script src="app.js"></script>
+    </header>
+    <div class="video-bg">
+    <video autoplay loop muted class="bg-video">
+      <source src="/images/IMG_2507.MOV" type="video/mp4">
+    </video>
   </div>
-</body>
-</html>
+  <div class="login-wrapper">
+      <form action="">
+        <h1>Login</h1>
+        <div class="login-input-box">
+          <input type="text" placeholder="Username" required>
+          <i class='bx bxs-user'></i>
+        </div>
+        <div class="login-input-box">
+          <input type="password" placeholder="Password" required>
+          <i class='bx bxs-lock-alt'></i>
+          </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">Remember me</label>
+          <a href="#">Forgot password?</a>
+          </div>
+        <button type="submit" class="login-btn">Login</button>
+        
+        <div class="register-link">
+          <p>Don't have an account?  
+            <a href="/src/signup.html">Register</a>
+          </p>
+          
+        </div>
+      </form>
+    </div>
+  </body>
+  </html>

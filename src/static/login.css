@@ -10,17 +10,19 @@
 }
 
 
-body{
+
+body {
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
   
-  justify-content:center;
-  align-items:center;
-  min-height:100vh;
-  text-align: center;
-}
 
 .login-wrapper{
   width:420px;
   background:transparent;
+  margin: 0 auto;
   opacity: 1;
   color:#fff;
   border-radius:10px;
