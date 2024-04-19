@@ -7,52 +7,51 @@
     <link rel="stylesheet" href="/src/static/style.css">
     <link rel="stylesheet" href="/src/static/contactus.css">
     <link rel="stylesheet" href="/src/static/navbar.css">
-    
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-          <nav class="navbar">
-            <img src="/images/Group_Logo.png" alt="OrionEngine Ensemble Logo" class="logo">
-            <div class="menu-toggle" id="mobile-menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-            <ul class="nav-menu">
-              <li><a href="index.html" class="nav-links">Home</a></li>
-              <li><a href="#" class="nav-links">Services</a></li>
-              <li><a href="aboutus.html" class="nav-links">About Us</a></li>
-              <li><a href="#" class="nav-links">Contact Us</a></li>
-              <li><a href="signup.html" class="nav-links nav-links-btn">Sign Up</a></li>
-            </ul>
-          </nav>
+  <header>
+    <div class="nav-container">
+      <nav class="navbar">
+        <img src="/images/Group_Logo.png" alt="OrionEngine Ensemble Logo" class="logo">
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <script src="app.js"></script>
-        </header>
-        <div class="video-bg">
-            <video autoplay loop muted class="bg-video">
-              <source src="/images/IMG_2507.MOV" type="video/mp4">
-            </video>
-          </div>
-    <div class="contact-container">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-links">Home</a></li>
+          <li><a href="#" class="nav-links">Services</a></li>
+          <li><a href="aboutus.html" class="nav-links">About Us</a></li>
+          <li><a href="contactus.html" class="nav-links">Contact Us</a></li>
+          <li><a href="signup.html" class="nav-links nav-links-btn">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script src="app.js"></script>
+  </header>
+  <div class="video-bg">
+    <video autoplay loop muted class="bg-video">
+      <source src="/images/IMG_2507.MOV" type="video/mp4">
+    </video>
+  </div>
+    <div class="contact-wrapper">
         <h1>Contact Us</h1>
         <form action="submit_form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
+            <div class="contact-input-box">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="contact-input-box">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="contact-input-box">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="contact-btn">Send Message</button>
         </form>
     </div>
     <footer>
       <p>&copy; 2024 Population Search Engine. All rights reserved.</p>
     </footer>
-  
 </body>
 </html>
