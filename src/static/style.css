@@ -111,52 +111,61 @@ main {
 
 /* Featured Data Styles */
 .featured-data {
-  background-color: whitesmoke;
-  padding: 50px 20px;
-  text-align: center;
-  overflow: hidden; /* Add this line to hide any overflowing content */
+  background-color: var(--darkgray); /* from .about-content in aboutus.css */
+  color: #fff; /* Assuming you want the text color to be white */
+  padding: 40px; /* adjusted to match .about-section in aboutus.css */
+  margin: -15px auto 20px auto; /* centers the section with auto margins on both sides */
+  max-width: 800px; /* assuming you want to maintain a consistent max-width */
+  border-radius: 8px; /* from .about-content in aboutus.css */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow for depth */
+  text-align: center; /* to center your text */
 }
 
 .featured-data h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
+  color: var(--lightred); /* assuming you want to use the --lightred variable for headings */
+  margin-bottom: 5px; /* spacing between the heading and paragraph */
 }
 
 .data-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: -10px; /* Add negative margin to offset the spacing between cards */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* responsive grid layout */
+  grid-gap: 20px; /* spacing between cards */
 }
 
 .data-card {
-  background-color: var(--darkgray);
-  padding: 30px;
-  margin: 10px; /* Update the margin to provide spacing between cards */
-  flex: 0 0 calc(33.33% - 20px); /* Update the flex property to set width and spacing */
-  text-align: center;
-  border-radius: 5px;
-  color: #fff;
-  box-sizing: border-box; /* Add this line to include padding and border in the element's total width */
+  background-color: var(--darkgray); /* assuming you want the same bg color for cards */
+  color: white; /* text color */
+  padding: 20px; /* spacing inside cards */
+  border-radius: 8px; /* rounded corners */
+  text-align: center; /* center text in cards */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* shadow for depth */
 }
 
 .data-card h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  color: var(--lightred); /* heading color inside cards */
+  margin-bottom: 10px; /* spacing after headings */
 }
 
 .data-card p {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* spacing after paragraphs */
 }
 
 .data-card a {
-  color: #4CAF50;
-  text-decoration: none;
+  color: #4CAF50; /* assuming you want a specific color for links */
+  text-decoration: none; /* no underline on links */
 }
 
 .data-card a:hover {
-  color: #45a049;
+  color: #45a049; /* color on hover for links */
+  text-decoration: underline; /* underline on hover for links */
 }
+
+@media (max-width: 768px) {
+  .featured-data, .data-cards, .data-card {
+    max-width: 100%; /* full width on small screens */
+  }
+}
+
 
 @media (max-width: 768px) {
   .data-cards {
@@ -198,7 +207,6 @@ footer p {
   text-decoration: none;
 }
 
-/* Button hover effect */
 .get-started:hover {
   
   color: var(--brightred);
