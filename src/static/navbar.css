@@ -22,6 +22,7 @@
   }
 }
   .nav-container {
+    
     position: sticky;
     width: 100%;
     background-color: var(--darkgray);

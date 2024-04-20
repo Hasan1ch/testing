@@ -35,13 +35,13 @@ body {
     overflow: hidden;
   }
   
-  .header-container {
+  .orionengine-ensemble {
     display: flex;
     align-items: center;
     justify-content: start;
-    padding: 20px;
+    
     border-radius: 8px;
-    background-color: var(--darkgray);
+    background-color: transparent;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     max-width: 800px;
     margin: 20px auto;
@@ -50,7 +50,7 @@ body {
   .title h1 {
     color:#f9433dcc;
     margin: 0;
-    font-size: 24px;
+    font-size: 50px;
     padding: 0 60px;
   }
   
@@ -59,7 +59,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     background-color: var(--darkgray);
-    border-radius: 8px;
+    border-radius: 40px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
@@ -68,6 +68,7 @@ body {
   }
   
   .about-content {
+    font-size:20px;
     background-color: var(--darkgray);
     padding: 30px;
     border-radius: 8px;
@@ -105,8 +106,8 @@ body {
   }
   
   .team-member img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
