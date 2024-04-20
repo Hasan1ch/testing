@@ -109,6 +109,65 @@ main {
   }
 }
 
+/* Commenting out the hero section styles */
+/*
+.hero {
+  background-color: var(--darkgray);
+  color: #fff;
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.hero h1 {
+  color: var(--lightred);
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero button.get-started {
+  background-color: var(--brightred);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.hero button.get-started:hover {
+  color: var(--brightred);
+  background: transparent;
+  border: 2px solid var(--brightred);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}
+*/
+
+
 /* Featured Data Styles */
 .featured-data {
   background-color: var(--darkgray); /* from .about-content in aboutus.css */

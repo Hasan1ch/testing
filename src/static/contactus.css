@@ -65,7 +65,9 @@ body {
     width: 100%;
     margin: 20px 0;
 }
-
+.contact-input-box input::placeholder{
+  color: white;
+}
 .contact-input-box input,
 .contact-input-box textarea {
     width: 100%;
@@ -82,19 +84,25 @@ body {
     resize: none;
     border-radius: 20px;
 }
-
+.contact-input-box textarea::placeholder{
+  color: white;
+}
 .contact-btn {
     width: 100%;
     height: 45px;
     background: #f9433dcc; /* Button Background Color */
     color: #fff;
-    border: none;
+    padding: 0;
     border-radius: 40px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s;
+    color: var(--white);
+    transition: all 0.4s ease-out;
 }
 
 .contact-btn:hover {
-    background-color: #db3073cc; /* Darker shade for hover */
+  border: none;
+  padding: 0;
+  border-radius: 40px;
+  background-color: var(--brightred);
+  color: var(--white);
+  transition: all 0.4s ease-out;
 }
